@@ -1,32 +1,30 @@
-import Hero from './components/Hero';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
-import './App.css';
+import { useEffect } from "react";
+import Layout from "./components/Layout.jsx";
+import Home from "./pages/Home.jsx";
+import Impressum from "./pages/Impressum.jsx";
+import Datenschutz from "./pages/Datenschutz.jsx";
+import NotFound from "./pages/NotFound.jsx";
+import { PAGES, resolveRoute } from "./meta.js";
 
-function App() {
+const VIEWS = {
+  home: Home,
+  impressum: Impressum,
+  datenschutz: Datenschutz,
+  notfound: NotFound,
+};
+
+export default function App({ path }) {
+  const route = resolveRoute(path);
+  const View = VIEWS[route];
+
+  // Im Dev-Modus (ohne Prerendering) den Titel trotzdem setzen.
+  useEffect(() => {
+    document.title = PAGES[route].title;
+  }, [route]);
+
   return (
-    <>
-      <nav className="navbar">
-        <div className="container nav-container">
-          <div className="nav-logo">CW.DEV</div>
-          <div className="nav-links">
-            <a href="#projects">Leistungen</a>
-            <a href="#skills">Tech Stack</a>
-            <a href="#contact">Kontakt</a>
-          </div>
-        </div>
-      </nav>
-
-      <main>
-        <Hero />
-        <Projects />
-        <Skills />
-      </main>
-
-      <Contact />
-    </>
+    <Layout>
+      <View />
+    </Layout>
   );
 }
-
-export default App;

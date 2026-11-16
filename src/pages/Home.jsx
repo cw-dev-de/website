@@ -119,9 +119,7 @@ export default function Home() {
           <div>
             <h2 id="h-ich">Über mich</h2>
             <p>
-              Ich bin Christian Wegner, Webentwickler aus Hamm. Beruflich lerne ich
-              Anwendungsentwicklung als Fachinformatiker, nebenbei baue ich Websites für
-              Unternehmen.
+              Ich bin Christian, Webentwickler aus Hamm.
             </p>
             <p>
               Du sprichst direkt mit mir, nicht mit einer Agentur. Ich schreibe jeden Code selbst

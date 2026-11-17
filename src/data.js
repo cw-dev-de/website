@@ -1,8 +1,23 @@
 export const SITE_URL = "https://cw-dev.de";
-export const EMAIL = "Kontakt@cw-dev.de";
+export const EMAIL = "kontakt@cw-dev.de";
 
-export const MAILTO_TEMPLATE =
-  "mailto:Kontakt@cw-dev.de?subject=Anfrage%3A%20Website&body=Hallo%20Christian%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20eine%20Website.%0A%0AName%20/%20Firma%3A%0ABranche%3A%0AWas%20soll%20gebaut%20oder%20verbessert%20werden%3A%0ABestehende%20Website%20%28falls%20vorhanden%29%3A%0AGew%C3%BCnschter%20Starttermin%3A%0A%0AViele%20Gr%C3%BC%C3%9Fe";
+const MAIL_BODY = [
+  "Sehr geehrter Herr Wegner,",
+  "",
+  "ich interessiere mich für die Entwicklung einer Website und bitte um ein Angebot.",
+  "",
+  "Name / Firma:",
+  "Branche:",
+  "Gewünschte Leistung (Neuerstellung, Überarbeitung, SEO):",
+  "Bestehende Website (falls vorhanden):",
+  "Gewünschter Starttermin:",
+  "",
+  "Mit freundlichen Grüßen",
+].join("\n");
+
+export const MAILTO_TEMPLATE = `mailto:${EMAIL}?subject=${encodeURIComponent(
+  "Anfrage: Website"
+)}&body=${encodeURIComponent(MAIL_BODY)}`;
 
 export const NAV = [
   { href: "/#leistungen", label: "Leistungen" },
@@ -12,76 +27,76 @@ export const NAV = [
 ];
 
 export const FACTS = [
-  { term: "Technik", text: "Handgeschriebenes HTML, CSS und JavaScript" },
-  { term: "Sicherheit", text: "Schlanker Code, wenig Angriffsfläche, HTTPS inklusive" },
-  { term: "Preis", text: "Festpreis-Angebot vor Projektstart" },
+  { term: "Technik", text: "Individuell entwickeltes HTML, CSS und JavaScript" },
+  { term: "Sicherheit", text: "Schlanker Code, geringe Angriffsfläche, HTTPS inklusive" },
+  { term: "Preis", text: "Verbindliches Festpreis-Angebot vor Projektbeginn" },
 ];
 
 export const SERVICES = [
   {
     title: "Neue Firmenwebsite",
-    text: "Ein- oder mehrseitiger Auftritt mit deinem Design, deinen Inhalten und Kontaktmöglichkeiten. Responsiv für Handy, Tablet und Desktop.",
+    text: "Ein- oder mehrseitiger Webauftritt mit individuellem Design, Ihren Inhalten und klaren Kontaktmöglichkeiten. Optimiert für Smartphone, Tablet und Desktop.",
   },
   {
     title: "Website überarbeiten",
-    text: "Deine bestehende Seite ist langsam, veraltet oder lässt sich nicht gut bedienen? Ich baue sie neu auf oder optimiere sie gezielt.",
+    text: "Ist Ihre bestehende Website langsam, veraltet oder umständlich zu bedienen? Ich setze sie neu auf oder optimiere sie gezielt.",
   },
   {
     title: "Suchmaschinenoptimierung",
-    text: "Saubere Seitenstruktur, schnelle Ladezeiten, Meta-Daten, strukturierte Daten und lokale Auffindbarkeit. SEO ist bei mir von Anfang an Teil der Entwicklung.",
+    text: "Saubere Seitenstruktur, kurze Ladezeiten, Meta-Daten, strukturierte Daten und lokale Auffindbarkeit. Suchmaschinenoptimierung ist von Beginn an Teil der Entwicklung.",
   },
   {
     title: "Betreuung und Änderungen",
-    text: "Neue Texte, zusätzliche Seiten, Bildtausch: Ich pflege deine Website nach Absprache weiter.",
+    text: "Neue Texte, zusätzliche Seiten, Bildaustausch: Ich betreue Ihre Website nach Absprache fortlaufend.",
   },
 ];
 
 export const BENEFITS = [
-  "Schnelle Ladezeiten, weil nur lädt, was die Seite braucht",
-  "Keine laufenden Updates und wenig Angriffsfläche",
-  "Keine Datenbank, die ausfallen oder gehackt werden kann",
-  "Kein Cookie-Banner nötig, solange nichts getrackt wird",
-  "Der Code gehört dir und ist nicht an einen Anbieter gebunden",
+  "Kurze Ladezeiten, da nur geladen wird, was die Seite benötigt",
+  "Keine laufenden Updates und geringe Angriffsfläche",
+  "Keine Datenbank, die ausfallen oder angegriffen werden kann",
+  "Kein Cookie-Banner erforderlich, solange kein Tracking eingesetzt wird",
+  "Der Quellcode gehört Ihnen, es besteht keine Bindung an einen Anbieter",
 ];
 
 export const STEPS = [
-  { title: "Anfrage", text: "Du schreibst mir per E-Mail, was du brauchst. Ich melde mich mit Rückfragen." },
-  { title: "Angebot", text: "Du bekommst ein Festpreis-Angebot mit Umfang und Zeitplan." },
-  { title: "Umsetzung", text: "Ich baue die Seite und zeige dir Zwischenstände. Du gibst Feedback." },
-  { title: "Livegang", text: "Nach deiner Freigabe geht die Seite online, inklusive Domain und HTTPS." },
+  { title: "Anfrage", text: "Sie schildern mir Ihr Vorhaben per E-Mail. Ich melde mich mit Rückfragen." },
+  { title: "Angebot", text: "Sie erhalten ein Festpreis-Angebot mit Leistungsumfang und Zeitplan." },
+  { title: "Umsetzung", text: "Ich entwickle die Website und stelle Ihnen Zwischenstände vor. Ihr Feedback fließt laufend ein." },
+  { title: "Livegang", text: "Nach Ihrer Freigabe geht die Website online, inklusive Domain und HTTPS." },
 ];
 
 export const PRICE_POINTS = [
-  "Was du anbietest und wer deine Kunden sind",
-  "Ob es schon eine Website gibt (Link)",
-  "Was die neue Seite können soll",
-  "Bis wann du sie brauchst",
+  "Ihrem Leistungsangebot und Ihrer Zielgruppe",
+  "Ihrer bestehenden Website (Link), falls vorhanden",
+  "den gewünschten Funktionen der neuen Website",
+  "Ihrem gewünschten Fertigstellungstermin",
 ];
 
 export const FAQ = [
   {
     q: "Was kostet eine Website?",
-    a: "Das hängt vom Umfang ab: Anzahl der Seiten, Texte, Bilder und Sonderwünsche. Du bekommst nach einem kurzen Austausch ein Festpreis-Angebot, bevor irgendetwas gebaut wird. Schreib mir dafür einfach eine E-Mail mit deinem Vorhaben.",
+    a: "Der Preis richtet sich nach dem Umfang: Anzahl der Seiten, Texte, Bilder und Sonderwünsche. Nach einem kurzen Austausch erhalten Sie ein Festpreis-Angebot, bevor die Entwicklung beginnt. Senden Sie mir hierfür einfach eine E-Mail mit Ihrem Vorhaben.",
   },
   {
-    q: "Wie lange dauert es bis zur fertigen Website?",
-    a: "Eine kleine Firmenwebsite mit wenigen Seiten ist meist in ein bis drei Wochen online, sofern Texte und Bilder rechtzeitig vorliegen. Den genauen Zeitplan nenne ich dir im Angebot.",
+    q: "Wie lange dauert die Umsetzung?",
+    a: "Eine kleine Firmenwebsite mit wenigen Seiten ist in der Regel innerhalb von ein bis drei Wochen online, sofern Texte und Bilder rechtzeitig vorliegen. Den verbindlichen Zeitplan nenne ich Ihnen im Angebot.",
   },
   {
     q: "Warum handgeschriebener Code?",
-    a: "Handgeschriebene Seiten laden schneller, sind schwerer anzugreifen und brauchen keine laufenden Updates. Dafür änderst du Inhalte nicht selbst in einem Dashboard, sondern schickst sie mir. Für die meisten kleinen Firmenseiten ist das der bessere Tausch.",
+    a: "Individuell entwickelte Seiten laden schneller, sind weniger angreifbar und benötigen keine laufenden Updates. Inhalte pflegen Sie dafür nicht selbst in einem Dashboard, sondern übermitteln sie mir. Für die meisten kleinen Firmenwebsites ist das die bessere Abwägung.",
   },
   {
-    q: "Kann ich später Änderungen machen lassen?",
-    a: "Ja. Texte ändern, Seiten ergänzen oder Bilder tauschen übernehme ich nach Absprache. Kleine Änderungen sind schnell erledigt.",
+    q: "Sind spätere Änderungen möglich?",
+    a: "Ja. Textänderungen, zusätzliche Seiten oder ein Austausch von Bildern übernehme ich nach Absprache. Kleine Änderungen werden zeitnah umgesetzt.",
   },
   {
-    q: "Brauche ich eine eigene Domain?",
-    a: "Für einen professionellen Auftritt ja. Ich helfe dir bei der Auswahl und richte die Domain samt HTTPS-Verschlüsselung für dich ein.",
+    q: "Benötige ich eine eigene Domain?",
+    a: "Für einen professionellen Auftritt ja. Ich berate Sie bei der Auswahl und richte die Domain samt HTTPS-Verschlüsselung für Sie ein.",
   },
   {
-    q: "Sind Impressum und Datenschutzerklärung dabei?",
-    a: "Ich baue die Seiten dafür ein und bereite sie vor. Die rechtliche Prüfung der Texte kann ich dir nicht abnehmen, dafür empfehle ich bei Bedarf eine Rechtsberatung oder einen Generator wie eRecht24.",
+    q: "Sind Impressum und Datenschutzerklärung enthalten?",
+    a: "Ich binde die entsprechenden Seiten ein und bereite sie vor. Die rechtliche Prüfung der Texte kann ich nicht übernehmen. Hierfür empfehle ich bei Bedarf eine Rechtsberatung oder einen Generator wie eRecht24.",
   },
 ];
 
@@ -104,7 +119,7 @@ export const HOME_JSON_LD = {
       logo: `${SITE_URL}/assets/icon-512.png`,
       image: `${SITE_URL}/assets/og-image.png`,
       description:
-        "Webentwicklung für Firmenwebsites: handgeschrieben, schnell, sicher und suchmaschinenoptimiert.",
+        "Webentwicklung für Firmenwebsites: individuell entwickelt, schnell, sicher und suchmaschinenoptimiert.",
       areaServed: [
         { "@type": "City", name: "Hamm" },
         { "@type": "State", name: "Nordrhein-Westfalen" },

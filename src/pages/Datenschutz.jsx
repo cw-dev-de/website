@@ -25,7 +25,7 @@ export default function Datenschutz() {
           der Seite verarbeitet der Hosting-Anbieter technisch notwendige Daten, insbesondere die
           IP-Adresse, Datum und Uhrzeit des Abrufs sowie die angeforderte Seite. Rechtsgrundlage
           ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren und effizienten
-          Bereitstellung der Website). Weitere Informationen findest du in der
+          Bereitstellung der Website). Weitere Informationen finden Sie in der
           Datenschutzerklärung von GitHub.
         </p>
         <h2>3. Cookies, Tracking und Schriften</h2>
@@ -36,16 +36,16 @@ export default function Datenschutz() {
         </p>
         <h2>4. Kontaktaufnahme per E-Mail</h2>
         <p>
-          Wenn du mir eine E-Mail schickst, verarbeite ich deine Angaben zur Bearbeitung deiner
+          Wenn Sie mir eine E-Mail senden, verarbeite ich Ihre Angaben zur Bearbeitung Ihrer
           Anfrage und für Anschlussfragen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO
           (vorvertragliche Maßnahmen) oder Art. 6 Abs. 1 lit. f DSGVO. Die Daten werden gelöscht,
           sobald sie nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten
           entgegenstehen.
         </p>
-        <h2>5. Deine Rechte</h2>
+        <h2>5. Ihre Rechte</h2>
         <p>
-          Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
-          Datenübertragbarkeit und Widerspruch. Außerdem kannst du dich bei einer
+          Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
+          Datenübertragbarkeit und Widerspruch. Außerdem können Sie sich bei einer
           Datenschutzaufsichtsbehörde beschweren, in Nordrhein-Westfalen bei der Landesbeauftragten
           für Datenschutz und Informationsfreiheit NRW.
         </p>

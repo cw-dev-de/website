@@ -1,4 +1,3 @@
-// Rendert jede Seite zu statischem HTML (gut für SEO und GitHub Pages).
 import fs from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";

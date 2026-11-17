@@ -7,9 +7,9 @@ export default function NotFound() {
         <p className="code" aria-hidden="true">
           404
         </p>
-        <h1>Diese Seite gibt es nicht.</h1>
+        <h1>Diese Seite existiert nicht.</h1>
         <p>
-          Der Link ist veraltet oder enthält einen Tippfehler. Du kommst hier zurück zum Angebot
+          Der Link ist veraltet oder enthält einen Tippfehler. Hier gelangen Sie zurück zum Angebot
           oder direkt zu mir.
         </p>
         <div className="cta" style={{ marginTop: "1.75rem" }}>

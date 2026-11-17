@@ -6,7 +6,7 @@ export const PAGES = {
     url: "/",
     title: "Webentwickler Hamm | Handgeschriebene Websites | CW Dev",
     description:
-      "Webentwicklung aus Hamm: handgeschriebene Firmenwebsites, schnell, sicher und für Google optimiert. Festpreis-Angebot per E-Mail.",
+      "Webentwicklung aus Hamm: individuell entwickelte Firmenwebsites, schnell, sicher und für Google optimiert. Festpreis-Angebot per E-Mail.",
     robots: "index,follow",
     canonical: `${SITE_URL}/`,
     jsonLd: HOME_JSON_LD,
@@ -31,13 +31,12 @@ export const PAGES = {
     file: "404.html",
     url: "/404.html",
     title: "Seite nicht gefunden | CW Dev",
-    description: "Diese Seite gibt es nicht. Zurück zur Startseite von CW Dev.",
+    description: "Diese Seite existiert nicht. Zurück zur Startseite von CW Dev.",
     robots: "noindex,follow",
     canonical: `${SITE_URL}/404.html`,
   },
 };
 
-/** Wählt anhand des Pfads die passende Seite. */
 export function resolveRoute(pathname = "/") {
   const p = pathname.replace(/\/+$/, "") || "/";
   if (p === "/" || p === "/index.html") return "home";
@@ -49,7 +48,6 @@ export function resolveRoute(pathname = "/") {
 const esc = (s) =>
   String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
 
-/** Erzeugt die seitenspezifischen <head>-Tags als String (fürs Prerendering). */
 export function buildHead(page) {
   const lines = [
     `<title>${esc(page.title)}</title>`,

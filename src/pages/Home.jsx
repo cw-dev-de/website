@@ -17,8 +17,8 @@ export default function Home() {
         <div className="wrap">
           <h1 id="h1">Websites, die schnell laden und gefunden werden.</h1>
           <p className="lead">
-            Ich baue Firmenwebsites von Hand: ohne Ballast, sauber programmiert, schnell und so
-            aufgebaut, dass Google sie versteht.
+            Ich entwickle Firmenwebsites individuell und ohne Ballast: sauber programmiert, schnell
+            ladend und so aufgebaut, dass Suchmaschinen sie zuverlässig erfassen.
           </p>
           <div className="cta">
             <a className="btn" href={MAILTO_TEMPLATE}>
@@ -41,9 +41,10 @@ export default function Home() {
 
       <section id="leistungen" aria-labelledby="h-leistungen">
         <div className="wrap">
-          <h2 id="h-leistungen">Was ich für dich baue</h2>
+          <h2 id="h-leistungen">Leistungen</h2>
           <p className="intro">
-            Webentwicklung für Selbstständige, Handwerk, Dienstleister und kleine Unternehmen.
+            Webentwicklung für Selbstständige, Handwerksbetriebe, Dienstleister und kleine
+            Unternehmen.
           </p>
           <div className="rows">
             {SERVICES.map((s) => (
@@ -59,15 +60,15 @@ export default function Home() {
       <section className="alt" aria-labelledby="h-handgeschrieben">
         <div className="wrap split">
           <div>
-            <h2 id="h-handgeschrieben">Warum handgeschrieben?</h2>
+            <h2 id="h-handgeschrieben">Individuell entwickelt</h2>
             <p>
-              Für viele kleine Seiten ist weniger mehr. Eine handgebaute Seite ist einfacher,
-              schneller und schwerer anzugreifen.
+              Für viele kleine Webauftritte ist ein schlanker Aufbau die bessere Lösung. Eine
+              individuell entwickelte Website ist einfacher, schneller und weniger angreifbar.
             </p>
             <p className="note">
-              Der Preis dafür: Inhalte änderst du nicht selbst im Dashboard, sondern schickst sie
-              mir. Wer täglich selbst Texte pflegen will, ist mit einer anderen Lösung besser
-              bedient. Das sage ich dir ehrlich vorab.
+              Zu beachten: Inhalte pflegen Sie nicht selbst in einem Dashboard, sondern übermitteln
+              sie mir. Wer Texte täglich eigenständig bearbeiten möchte, ist mit einer anderen
+              Lösung besser beraten. Darauf weise ich Sie vorab ausdrücklich hin.
             </p>
           </div>
           <ul>
@@ -80,7 +81,7 @@ export default function Home() {
 
       <section id="ablauf" aria-labelledby="h-ablauf">
         <div className="wrap">
-          <h2 id="h-ablauf">So läuft ein Projekt ab</h2>
+          <h2 id="h-ablauf">Ablauf eines Projekts</h2>
           <ol className="steps">
             {STEPS.map((s) => (
               <li key={s.title}>
@@ -94,12 +95,12 @@ export default function Home() {
 
       <section className="price" id="preise" aria-labelledby="h-preise">
         <div className="wrap">
-          <h2 id="h-preise">Preise auf Anfrage, aber verbindlich</h2>
+          <h2 id="h-preise">Preise auf Anfrage, verbindlich im Angebot</h2>
           <p>
-            Jede Website ist anders, deshalb gibt es keine Pauschalpreise von der Stange. Du
-            bekommst vor dem Start ein Festpreis-Angebot, ohne versteckte Kosten.
+            Jede Website ist individuell, daher gibt es keine Pauschalpreise. Sie erhalten vor
+            Projektbeginn ein Festpreis-Angebot ohne versteckte Kosten.
           </p>
-          <p>Damit ich schnell antworten kann, schreib mir kurz:</p>
+          <p>Für eine zügige Rückmeldung benötige ich kurze Angaben zu:</p>
           <ul>
             {PRICE_POINTS.map((p) => (
               <li key={p}>{p}</li>
@@ -119,13 +120,13 @@ export default function Home() {
           <div>
             <h2 id="h-ich">Über mich</h2>
             <p>
-              Ich bin Christian Wegner, Webentwickler aus Hamm. Beruflich lerne ich
-              Anwendungsentwicklung als Fachinformatiker, nebenbei baue ich Websites für
+              Mein Name ist Christian Wegner, ich bin Webentwickler aus Hamm. Parallel zu meiner
+              Ausbildung zum Fachinformatiker für Anwendungsentwicklung entwickle ich Websites für
               Unternehmen.
             </p>
             <p>
-              Du sprichst direkt mit mir, nicht mit einer Agentur. Ich schreibe jeden Code selbst
-              und stehe für das Ergebnis gerade.
+              Sie haben einen direkten Ansprechpartner statt einer Agentur. Ich schreibe jede Zeile
+              Code selbst und verantworte das Ergebnis.
             </p>
           </div>
         </div>
@@ -147,8 +148,8 @@ export default function Home() {
 
       <section className="contact" id="kontakt" aria-labelledby="h-kontakt">
         <div className="wrap">
-          <h2 id="h-kontakt">Erzähl mir von deinem Projekt</h2>
-          <p>Eine kurze E-Mail reicht. Ich antworte dir mit Rückfragen und einem Angebot.</p>
+          <h2 id="h-kontakt">Projekt anfragen</h2>
+          <p>Eine kurze E-Mail genügt. Ich antworte mit Rückfragen und einem Angebot.</p>
           <a className="mail" href={`mailto:${EMAIL}`}>
             {EMAIL}
           </a>

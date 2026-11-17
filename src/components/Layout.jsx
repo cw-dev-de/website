@@ -27,7 +27,7 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <div className="wrap">
-        <p style={{ margin: 0, maxWidth: "none" }}>© 2026 ·CW Dev</p>
+        <p style={{ margin: 0, maxWidth: "none" }}>© 2026 Christian Wegner · CW Dev</p>
         <nav aria-label="Rechtliches">
           <a href="/impressum.html">Impressum</a>
           <a href="/datenschutz.html">Datenschutz</a>

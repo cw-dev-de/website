@@ -10,6 +10,7 @@ const app = (
   </StrictMode>
 );
 
+// Prerenderte Seiten werden hydriert, im Dev-Modus (leeres #root) normal gerendert.
 if (root.hasChildNodes()) {
   hydrateRoot(root, app);
 } else {

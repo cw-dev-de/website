@@ -17,6 +17,7 @@ export default function App({ path }) {
   const route = resolveRoute(path);
   const View = VIEWS[route];
 
+  // Im Dev-Modus (ohne Prerendering) den Titel trotzdem setzen.
   useEffect(() => {
     document.title = PAGES[route].title;
   }, [route]);

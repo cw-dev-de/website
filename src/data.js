@@ -1,98 +1,78 @@
 export const SITE_URL = "https://cw-dev.de";
 export const EMAIL = "kontakt@cw-dev.de";
 
-const MAIL_BODY = [
-  "Sehr geehrter Herr Wegner,",
-  "",
-  "ich interessiere mich für die Entwicklung einer Website und bitte um ein Angebot.",
-  "",
-  "Name / Firma:",
-  "Branche:",
-  "Gewünschte Leistung (Neuerstellung, Überarbeitung, SEO):",
-  "Bestehende Website (falls vorhanden):",
-  "Gewünschter Starttermin:",
-  "",
-  "Mit freundlichen Grüßen",
-].join("\n");
+/**
+ * Adresse des Formular-Dienstes (z. B. "https://formspree.io/f/xxxxxxxx").
+ * Solange hier nichts eingetragen ist, öffnet das Formular stattdessen
+ * eine vorbereitete E-Mail im Mailprogramm des Besuchers.
+ */
+export const FORM_ENDPOINT = "";
 
-export const MAILTO_TEMPLATE = `mailto:${EMAIL}?subject=${encodeURIComponent(
-  "Anfrage: Website"
-)}&body=${encodeURIComponent(MAIL_BODY)}`;
+export const MAIL_SUBJECT = "Anfrage: Website";
 
 export const NAV = [
   { href: "/#leistungen", label: "Leistungen" },
   { href: "/#ablauf", label: "Ablauf" },
   { href: "/#ueber-mich", label: "Über mich" },
-  { href: "/#faq", label: "FAQ" },
+  { href: "/#faq", label: "Fragen" },
 ];
 
 export const FACTS = [
-  { term: "Technik", text: "Individuell entwickeltes HTML, CSS und JavaScript" },
-  { term: "Sicherheit", text: "Schlanker Code, geringe Angriffsfläche, HTTPS inklusive" },
-  { term: "Preis", text: "Verbindliches Festpreis-Angebot vor Projektbeginn" },
+  { term: "Festpreis", text: "Verbindliches Angebot vor Projektbeginn, ohne versteckte Kosten" },
+  { term: "Ansprechpartner", text: "Direkter Kontakt zu mir, keine Agentur und kein Callcenter" },
+  { term: "Standort", text: "Aus Hamm, für Betriebe in der Region und darüber hinaus" },
 ];
 
 export const SERVICES = [
   {
-    title: "Neue Firmenwebsite",
-    text: "Ein- oder mehrseitiger Webauftritt mit individuellem Design, Ihren Inhalten und klaren Kontaktmöglichkeiten. Optimiert für Smartphone, Tablet und Desktop.",
+    title: "Neue Website und Modernisierung",
+    text: "Eine moderne, übersichtliche Website, die auf Smartphone, Tablet und Computer einwandfrei funktioniert. Ob Neuerstellung oder Überarbeitung Ihres bestehenden Auftritts.",
   },
   {
-    title: "Website überarbeiten",
-    text: "Ist Ihre bestehende Website langsam, veraltet oder umständlich zu bedienen? Ich setze sie neu auf oder optimiere sie gezielt.",
+    title: "Bei Google gefunden werden",
+    text: "Kunden aus Ihrer Region finden Ihren Betrieb, wenn sie nach Ihrer Leistung suchen. Ihre Website wird von Anfang an so aufgebaut, dass Google sie gut versteht.",
   },
   {
-    title: "Suchmaschinenoptimierung",
-    text: "Saubere Seitenstruktur, kurze Ladezeiten, Meta-Daten, strukturierte Daten und lokale Auffindbarkeit. Suchmaschinenoptimierung ist von Beginn an Teil der Entwicklung.",
+    title: "Rundum-Betreuung",
+    text: "Pflege, Sicherheit und Änderungen übernehme ich für Sie. Eine kurze Nachricht genügt, um Inhalte anzupassen oder zu ergänzen.",
   },
-  {
-    title: "Betreuung und Änderungen",
-    text: "Neue Texte, zusätzliche Seiten, Bildaustausch: Ich betreue Ihre Website nach Absprache fortlaufend.",
-  },
-];
-
-export const BENEFITS = [
-  "Kurze Ladezeiten, da nur geladen wird, was die Seite benötigt",
-  "Keine laufenden Updates und geringe Angriffsfläche",
-  "Keine Datenbank, die ausfallen oder angegriffen werden kann",
-  "Kein Cookie-Banner erforderlich, solange kein Tracking eingesetzt wird",
-  "Der Quellcode gehört Ihnen, es besteht keine Bindung an einen Anbieter",
 ];
 
 export const STEPS = [
-  { title: "Anfrage", text: "Sie schildern mir Ihr Vorhaben per E-Mail. Ich melde mich mit Rückfragen." },
-  { title: "Angebot", text: "Sie erhalten ein Festpreis-Angebot mit Leistungsumfang und Zeitplan." },
-  { title: "Umsetzung", text: "Ich entwickle die Website und stelle Ihnen Zwischenstände vor. Ihr Feedback fließt laufend ein." },
-  { title: "Livegang", text: "Nach Ihrer Freigabe geht die Website online, inklusive Domain und HTTPS." },
-];
-
-export const PRICE_POINTS = [
-  "Ihrem Leistungsangebot und Ihrer Zielgruppe",
-  "Ihrer bestehenden Website (Link), falls vorhanden",
-  "den gewünschten Funktionen der neuen Website",
-  "Ihrem gewünschten Fertigstellungstermin",
+  {
+    title: "Kennenlernen",
+    text: "In einem kurzen Gespräch von etwa 15 Minuten, telefonisch oder vor Ort, klären wir Ihre Wünsche. Anschließend erhalten Sie ein verbindliches Festpreis-Angebot.",
+  },
+  {
+    title: "Umsetzung",
+    text: "Ich erstelle Ihre Website komplett für Sie. Sie müssen lediglich die Zwischenstände ansehen und mir kurz Ihre Rückmeldung geben.",
+  },
+  {
+    title: "Veröffentlichung",
+    text: "Nach Ihrer Freigabe geht die Website online. Danach bleibe ich Ihr fester Ansprechpartner für Änderungen und Fragen.",
+  },
 ];
 
 export const FAQ = [
   {
     q: "Was kostet eine Website?",
-    a: "Der Preis richtet sich nach dem Umfang: Anzahl der Seiten, Texte, Bilder und Sonderwünsche. Nach einem kurzen Austausch erhalten Sie ein Festpreis-Angebot, bevor die Entwicklung beginnt. Senden Sie mir hierfür einfach eine E-Mail mit Ihrem Vorhaben.",
+    a: "Der Preis richtet sich nach Umfang und Wünschen, etwa nach der Anzahl der Seiten sowie den benötigten Texten und Bildern. Nach einem kurzen Gespräch erhalten Sie ein verbindliches Festpreis-Angebot, bevor das Projekt beginnt. Es entstehen keine versteckten Kosten.",
   },
   {
     q: "Wie lange dauert die Umsetzung?",
-    a: "Eine kleine Firmenwebsite mit wenigen Seiten ist in der Regel innerhalb von ein bis drei Wochen online, sofern Texte und Bilder rechtzeitig vorliegen. Den verbindlichen Zeitplan nenne ich Ihnen im Angebot.",
+    a: "Eine kleine Firmenwebsite ist in der Regel innerhalb von ein bis drei Wochen online, sofern Texte und Bilder rechtzeitig vorliegen. Den genauen Zeitplan nenne ich Ihnen im Angebot.",
   },
   {
-    q: "Warum handgeschriebener Code?",
-    a: "Individuell entwickelte Seiten laden schneller, sind weniger angreifbar und benötigen keine laufenden Updates. Inhalte pflegen Sie dafür nicht selbst in einem Dashboard, sondern übermitteln sie mir. Für die meisten kleinen Firmenwebsites ist das die bessere Abwägung.",
+    q: "Muss ich Texte und Bilder selbst liefern?",
+    a: "Bei der Formulierung der Texte unterstütze ich Sie. Fotos Ihres Betriebs, Ihrer Arbeit oder Ihres Teams sollten Sie selbst zur Verfügung stellen, da sie Ihren Betrieb am besten zeigen.",
   },
   {
-    q: "Sind spätere Änderungen möglich?",
-    a: "Ja. Textänderungen, zusätzliche Seiten oder ein Austausch von Bildern übernehme ich nach Absprache. Kleine Änderungen werden zeitnah umgesetzt.",
+    q: "Kann ich später Änderungen vornehmen lassen?",
+    a: "Ja. Änderungen von Texten, Bildern oder Öffnungszeiten sowie zusätzliche Seiten übernehme ich für Sie. Eine kurze Nachricht genügt. Die Inhalte bearbeiten Sie nicht selbst im Browser, dafür müssen Sie sich um keinerlei Technik kümmern.",
   },
   {
-    q: "Benötige ich eine eigene Domain?",
-    a: "Für einen professionellen Auftritt ja. Ich berate Sie bei der Auswahl und richte die Domain samt HTTPS-Verschlüsselung für Sie ein.",
+    q: "Benötige ich eine eigene Internetadresse?",
+    a: "Für einen professionellen Auftritt ja, zum Beispiel www.ihr-betrieb.de. Ich berate Sie bei der Auswahl und richte die Adresse für Sie ein.",
   },
   {
     q: "Sind Impressum und Datenschutzerklärung enthalten?",
@@ -119,7 +99,7 @@ export const HOME_JSON_LD = {
       logo: `${SITE_URL}/assets/icon-512.png`,
       image: `${SITE_URL}/assets/og-image.png`,
       description:
-        "Webentwicklung für Firmenwebsites: individuell entwickelt, schnell, sicher und suchmaschinenoptimiert.",
+        "Websites für Betriebe und Dienstleister: Gestaltung, Texte und Auffindbarkeit bei Google aus einer Hand.",
       areaServed: [
         { "@type": "City", name: "Hamm" },
         { "@type": "State", name: "Nordrhein-Westfalen" },
@@ -128,10 +108,9 @@ export const HOME_JSON_LD = {
       founder: { "@type": "Person", name: "Christian Wegner" },
       knowsAbout: ["Webentwicklung", "Suchmaschinenoptimierung", "Webdesign"],
       makesOffer: [
-        "Firmenwebsite erstellen",
-        "Website überarbeiten und beschleunigen",
-        "Suchmaschinenoptimierung (SEO)",
-        "Website-Betreuung",
+        "Neue Website und Modernisierung",
+        "Auffindbarkeit bei Google (SEO)",
+        "Betreuung und Pflege von Websites",
       ].map((name) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name } })),
     },
     {

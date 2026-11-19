@@ -34,10 +34,12 @@ export default function Datenschutz() {
           verwendete Schriftart wird von diesem Server ausgeliefert und nicht von externen
           Anbietern geladen.
         </p>
-        <h2>4. Kontaktaufnahme per E-Mail</h2>
+        <h2>4. Kontaktaufnahme per Formular oder E-Mail</h2>
         <p>
-          Wenn Sie mir eine E-Mail senden, verarbeite ich Ihre Angaben zur Bearbeitung Ihrer
-          Anfrage und für Anschlussfragen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO
+          Wenn Sie das Kontaktformular nutzen oder mir eine E-Mail senden, verarbeite ich Ihre
+          Angaben (Name, Kontaktdaten, Nachricht) zur Bearbeitung Ihrer Anfrage und für
+          Anschlussfragen. Die Übermittlung der Formulardaten erfolgt über einen Formular-Dienst:{" "}
+          <Todo>[Anbieter und Anschrift eintragen, z. B. Formspree, sobald eingerichtet]</Todo>. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO
           (vorvertragliche Maßnahmen) oder Art. 6 Abs. 1 lit. f DSGVO. Die Daten werden gelöscht,
           sobald sie nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten
           entgegenstehen.
